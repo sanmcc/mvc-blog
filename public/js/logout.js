@@ -1,0 +1,1 @@
+//logout function and btn hndlr
