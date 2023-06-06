@@ -1,0 +1,17 @@
+[
+    {
+     "title": "boop",
+     "description": "boopboopboop",
+     "user_id": 1
+    },
+    {
+     "title": "tech things",
+     "description": "stuff",
+     "user_id": 2
+    }, 
+    {
+        "title": "cool people list",
+        "description": "me",
+        "user_id": 3
+       }
+   ]
