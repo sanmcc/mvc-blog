@@ -1,27 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" style=>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MVC Blog</title>
   <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+    
+    .display-flex {
+      display: flex;
+    }
+    
+    .justify-space-between {
+      justify-content: space-between;
+    }
+    
+    .align-center {
+      align-items: center;
+    }
+    
+    .flex-left {
+      margin-right: auto;
+    }
+    
+    .logout-btn {
+      margin-left: 1rem;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="flex-column justify-space-around" >
+  <div class="flex-column container">
     <header class="display-flex justify-space-between align-center p-2">
       <h1 class="flex-left">
-        Tech Bologna</a>
+        Tech Blog 
       </h1>
 
       <!-- Conditionally render login or logout links -->
-      <a href="/">Home</a> |
-      {{#if logged_in}}
-      <a href="/dashboard">Dashboard</a>
-      <button class="logout-btn" id="logout">Logout</button>
-      {{else}}
-      <a href="/login">Login</a>
-      {{/if}}
+      <nav>
+        <a href="/">Home</a> |
+        {{#if logged_in}}
+        <a href="/dashboard">Dashboard</a>
+        <button class="logout-btn" id="logout">Logout</button>
+        {{else}}
+        <a href="/login">Login</a>
+        {{/if}}
       </nav>
     </header>
     <main class="container container-fluid mt-5">
