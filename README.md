@@ -18,8 +18,8 @@ I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 
-![Alt Text]()
-![Alt Text]()
+![Alt Text](./public/assets/1.JPG)
+![Alt Text](./public/assets/2.JPG)
 
 ## Live URL 
 [Visit the website:](https://secret-bayou-56501.herokuapp.com)
